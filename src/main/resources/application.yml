@@ -1,0 +1,15 @@
+spring :
+  data :
+    mongodb :
+      uri : mongodb+srv://admin123:admin123@task1.zgjw2qw.mongodb.net/?retryWrites=true&w=majority&appName=Task1
+      database : Task
+      auto-index-creataion : true
+    #if connection is failing to Mongodb whitelist the IP address in mongodb atlas
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
